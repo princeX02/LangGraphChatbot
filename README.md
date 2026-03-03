@@ -6,19 +6,21 @@ It demonstrates how **multiple Streamlit frontends** can interact with **differe
 ---
 
 ## 📁 Project Structure
+
+```text
 langgraph-chatbot/
 │
 ├── streamlit1_frontend_streaming.py          # Streamlit app 1 (uses langgraph1)
 ├── streamlit2_frontend_threading.py          # Streamlit app 2 (uses langgraph1)
 ├── streamlit3_frontend_databases.py          # Streamlit app 3 (uses langgraph2)
 │
-├── langgraph1_backend.py
-│        
-├── langgraph2.py
-│  
-├── requirements.txt       # Python dependencies
+├── langgraph1_backend.py                     # LangGraph backend for streaming & threading
+├── langgraph2.py                             # LangGraph backend with database support
+│
+├── requirements.txt                          # Python dependencies
 ├── .gitignore
 └── README.md
+```
 
 
 
